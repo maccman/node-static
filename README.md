@@ -93,7 +93,7 @@ has been served successfully, or if there was an error serving the file:
         request.addListener('end', function () {
             fileServer.serve(request, response, function (err, result) {
                 if (err) { // There was an error serving the file
-                    sys.error("Error serving " + request.url + " - " + err.message);
+                    util.error("Error serving " + request.url + " - " + err.message);
 
                     // Respond to the client
                     response.writeHead(err.status, err.headers);
@@ -113,7 +113,7 @@ send it to an application.
 If you only want to *listen* for errors, you can use *event listeners*:
 
     fileServer.serve(request, response).addListener('error', function (err) {
-        sys.error("Error serving " + request.url + " - " + err.message);
+        util.error("Error serving " + request.url + " - " + err.message);
     });
 
 With this method, you don't have to explicitly send the response back, in case of an error.
