@@ -1,5 +1,5 @@
 {
-  "name"          : "node-static",
+  "name"          : "node-static-maccman",
   "description"   : "simple, compliant file streaming module for node",
   "url"           : "http://github.com/cloudhead/node-static",
   "keywords"      : ["http", "static", "file", "server"],
@@ -9,7 +9,7 @@
   "dependencies"  : [],
   "lib"           : "lib",
   "main"          : "./lib/node-static",
-  "version"       : "0.5.3",
+  "version"       : "0.5.4",
   "directories"   : { "test": "./test" },
   "engines"       : { "node": ">= 0.2.3" }
 }
